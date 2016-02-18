@@ -1,0 +1,115 @@
+body {
+    background-color: #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI Light';
+}
+
+body > main {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+body > main > article {
+    position: fixed;
+    height: 600px;
+    width: 400px;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 1.5s;
+    cursor: pointer;
+}
+
+body > main > article:nth-child(1) {
+    left: 25%;
+    background-image: url("../img/card.1.jpg");
+}
+
+body > main > article:nth-child(2) {
+    left: 50%;
+    background-image: url("../img/card.2.jpg");
+    transform: rotateZ(30deg);
+}
+
+body > main > article:nth-child(3) {
+    left: 75%;
+    background-image: url("../img/card.3.jpg");
+}
+
+body > main > article > header {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 16px;
+    text-align: right;
+    transform: rotateZ(180deg);
+}
+
+body > main > article > header > div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../img/2.png");
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    opacity: 0.75;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+body > main > article > header > span {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    text-align: left;
+}
+
+body > main > article > footer {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 16px;
+    color: white;
+    text-align: right;
+}
+
+body > main > article > footer > div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../img/4.png");
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    opacity: 0.75;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+body > main > article > footer > span {
+    text-align: left;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+}
+
+body > main > article:hover {
+    transform: rotateZ(180deg);
+}
